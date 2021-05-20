@@ -1,5 +1,9 @@
+image: alpine:latest
+
 pages:
   stage: deploy
+  script:
+    - mv docs public
   artifacts:
     paths:
     - public

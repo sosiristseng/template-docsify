@@ -9,7 +9,6 @@ Based on
 - [docsify-tabs](https://jhildenbiddle.github.io/docsify-tabs/)
 - [docsify-example-panels](https://vagnerdomingues.github.io/docsify-example-panels/)
 - [docsify-plugin-flexible-alerts](https://github.com/fzankl/docsify-plugin-flexible-alerts)
-- Docsify search Box plugin
 
 ## Hosting on GitHub pages
 

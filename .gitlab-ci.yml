@@ -1,11 +1,4 @@
-image: alpine:latest
+include:
+  - project: 'sosiristseng/gitlab-templates'
+    file: '/docsify.gitlab-ci.yml'
 
-pages:
-  stage: deploy
-  script:
-    - mv docs public
-  artifacts:
-    paths:
-    - public
-  rules:
-    - if: "$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH"

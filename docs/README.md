@@ -2,7 +2,7 @@
 
 Based on 
 
-- [Docsify JS tutorial](https://michaelcurrin.github.io/docsify-js-tutorial/)
+- [Docsify tutorial](https://michaelcurrin.github.io/docsify-js-tutorial/)
 - [docsify-darklight-theme](https://docsify-darklight-theme.boopathikumar.me/)
 - [docsify-katex](https://upupming.site/docsify-katex/docs/)
 - [docsify-copy-code](https://github.com/jperasmus/docsify-copy-code)
@@ -12,8 +12,12 @@ Based on
 
 ## Hosting on GitHub pages
 
-After `Use this template`, in the `repository settings` -> `pages` -> select `public` folder for the `main` branch.
+Click the `Use this template` big green button to create a new project based on this one.
+
+Afterwrads, in the `repository settings` -> `pages` -> select root folder for the `main` branch.
 
 ## Hosting on GitLab pages
 
-Fork this project.
+Create a new project and import this repository: `https://gitlab.com/sosiristseng/template-docsify.git`
+
+See also the example [GitLab pipeline file](https://gitlab.com/sosiristseng/gitlab-templates/-/blob/main/docsify.gitlab-ci.yml).

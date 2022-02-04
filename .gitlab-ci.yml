@@ -1,4 +1,3 @@
 include:
   - project: 'sosiristseng/gitlab-templates'
     file: '/docsify.gitlab-ci.yml'
-

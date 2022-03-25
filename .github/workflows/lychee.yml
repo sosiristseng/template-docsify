@@ -12,13 +12,15 @@ jobs:
       - uses: actions/checkout@v3
 
       - name: Link Checker
-        uses: lycheeverse/lychee-action@master
+        id: lychee
+        uses: lycheeverse/lychee-action@v1.4.1
         with:
-          args: '--accept 200,204,429 --verbose --no-progress **/*.md'
+          args: "docs/ --accept 200,204,429 --verbose --no-progress"
         env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create Issue From File
+        if: ${{ steps.lychee.outputs.exit_code }} != 0
         uses: peter-evans/create-issue-from-file@v4
         with:
           title: Link Checker Report

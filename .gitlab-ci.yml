@@ -1,3 +1,5 @@
 include:
-  - project: 'sosiristseng/gitlab-templates'
-    file: '/docsify.gitlab-ci.yml'
+  - project: "sosiristseng/gitlab-templates"
+    file: "/docsify.gitlab-ci.yml"
+  - project: "sosiristseng/gitlab-templates"
+    file: "/lychee.gitlab-ci.yml"

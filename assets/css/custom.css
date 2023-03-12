@@ -1,8 +1,10 @@
 :root {
   --docsify-example-panels-left-panel-width : 50%;
   --docsify-example-panels-right-panel-width : 50%;
-  --base-font-size: 16px;
-  --link-color: #177013;
+}
+
+body {
+font-size: 16px;
 }
 
 @media screen and (min-width: 1230px) {

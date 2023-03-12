@@ -9,14 +9,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
 
     <!-- Favicon -->
-    <link rel="icon"
-        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎯</text></svg>">
 
-    <!-- Theme: Simple (latest v0.x.x) -->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+    <!-- Docsify theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.min.css">
 
     <!-- Katex stylesheets -->
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@0.10.2/dist/katex.min.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css">
 
     <!-- Custom stylesheets -->
@@ -27,7 +26,7 @@
     <div id="app">Loading...</div>
     <script>
         window.$docsify = {
-            name: "📒 Docsify template",
+            name: "📒 Notes",
             repo: "sosiristseng/template-docsify",
             basePath: "",
             relativePath: true,
@@ -36,7 +35,7 @@
             loadSidebar: true,
             loadNavbar: true,
             auto2top: true,
-            subMaxLevel: 0,
+            subMaxLevel: 3,
 
             notFoundPage: true,
             topMargin: 80,
@@ -55,15 +54,15 @@
     <!-- Docsify v4 -->
     <script src="//cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
 
-    <!-- docsify-themeable (latest v0.x.x) -->
-    <script src="//cdn.jsdelivr.net/npm/docsify-themeable@0/dist/js/docsify-themeable.min.js"></script>
-
-
     <!--KaTeX -->
-    <script src="//cdn.jsdelivr.net/npm/docsify-katex@1/dist/docsify-katex.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/katex@latest/dist/contrib/mhchem.min.js" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/marked@4/lib/marked.umd.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-katex/dist/docsify-katex.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
 
     <!-- Prismjs code highlighting -->
+    <!-- https://docsify.js.org/#/language-highlight?id=language-highlighting -->
     <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-julia.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-bash.min.js"></script>
     <script src="//cdn.jsdelivr.net/npm/prismjs@1/components/prism-python.min.js"></script>
@@ -88,8 +87,7 @@
     <script src="//cdn.jsdelivr.net/npm/docsify-example-panels@1/dist/docsify-example-panels.min.js"></script>
 
     <!-- Flexible alerts -->
-    <script
-        src="//cdn.jsdelivr.net/npm/docsify-plugin-flexible-alerts@1/dist/docsify-plugin-flexible-alerts.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/docsify-plugin-flexible-alerts@1/dist/docsify-plugin-flexible-alerts.min.js"></script>
 
 </body>
 

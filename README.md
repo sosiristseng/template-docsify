@@ -2,7 +2,7 @@
 
 Based on [Docsify tutorial](https://michaelcurrin.github.io/docsify-js-tutorial/) and the following plugins.
 
-- [docsify-katex](https://upupming.site/docsify-katex/docs/)
+- [docsify-katex](https://github.com/upupming/docsify-katex)
 - [docsify-copy-code](https://github.com/jperasmus/docsify-copy-code)
 - [docsify-tabs](https://jhildenbiddle.github.io/docsify-tabs/)
 - [docsify-example-panels](https://vagnerdomingues.github.io/docsify-example-panels/)

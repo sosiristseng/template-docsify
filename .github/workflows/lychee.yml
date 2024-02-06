@@ -3,26 +3,27 @@ name: Check markdown links
 on:
   workflow_dispatch:
   # schedule:
-  #   - cron: "0 0 * * 1"  # Every Monday
+  #   - cron: '0 0 1 * *' # Every month
 
 jobs:
-  linkChecker:
+  linkcheck:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Link Checker
-        id: lychee
-        uses: lycheeverse/lychee-action@v1.9.3
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Restore lychee cache
+        id: restore-cache
+        uses: actions/cache@v4
         with:
-          args: "**.md --accept 200,204,429 --verbose --no-progress"
+          save-always: 'true'
+          path: .lycheecache
+          key: cache-lychee-${{ github.sha }}
+          restore-keys: cache-lychee-
+      - name: Lychee Checker
+        uses: lycheeverse/lychee-action@v1.9.3
+        id: lychee
+        with:
+          fail: true
+          args: '--accept 200,204,429 --verbose --no-progress --cache --max-cache-age 1d .'
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Create Issue From File
-        if: ${{ steps.lychee.outputs.exit_code }} != 0
-        uses: peter-evans/create-issue-from-file@v5
-        with:
-          title: Link Checker Report
-          content-filepath: ./lychee/out.md
-          labels: report

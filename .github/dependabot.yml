@@ -4,3 +4,9 @@ updates:
     directory: "/"
     schedule:
       interval: "weekly"
+    groups:
+      gha-dependencies:
+        patterns:
+          - "*"
+    labels:
+      - automerge

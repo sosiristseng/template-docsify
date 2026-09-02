@@ -1,6 +1,6 @@
-# KaTeX example
+# LaTeX example
 
-Powered by [docsify-katex](https://upupming.site/docsify-katex/docs/)
+Powered by [docsify-latex](https://github.com/scruel/docsify-latex)
 
 ## Repeating fractions
 
@@ -18,7 +18,7 @@ $$f(x) = \frac{1}{\sqrt{2\pi}\sigma}e^{-\frac{(x-\mu)^2}{2\sigma^2}}$$
 
 $$\lim_{n\to \infty}\frac{A_{n-1}}{A_n}=\frac{\sqrt{5}-1}{2}.$$
 
-## Factorisation
+## Factorization
 
 $$
 \begin{aligned}(x−1)(x−3)&=x^2−4x+3 \cr
@@ -75,9 +75,7 @@ $$
 \end{aligned}
 $$
 
-## Chemical expression
-
-Powered by [mhchem](https://mhchem.github.io/MathJax-mhchem/). However, nested `$`...`$` blocks are not supported by docsify.
+## Chemical expressions
 
 $\ce{CO2 + C -> 2 CO}$
 

@@ -1,2 +1,2 @@
 - [🏠 **Home**](/)
-- [KaTeX](/katex.md)
+- [LaTeX](/latex.md)
